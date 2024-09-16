@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- CSS File link -->
+  <link href="./style.css" rel="stylesheet" />
+  <title>Future Tech</title>
+</head>
+<body>
+  <header class="header position-relative">
+    <nav class="navbar navbar-expand-lg" style="z-index: 1">
+      <div class="navbar-brand m-5" href="#">Future Tech</div>
+      <ul class="navbar-nav navbar-collapse justify-content-center mx-5">
+        <li class="navbar-items mx-5">
+          <a class="nav-link fw-bold"> Home </a>
+        </li>
+        <li class="navbar-items dropdown mx-5">
+          <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Shope
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-start" href="#">Accessories</a></li>
+            <li><a class="dropdown-item text-start" href="#">Phones</a></li>
+          </ul>
+        </li>
+        <li class="navbar-items mx-5">
+          <a href="#New" class="nav-link fw-bold"> New </a>
+        </li>
+        <li class="navbar-items mx-5">
+          <a href="#Sales" class="nav-link fw-bold"> Sales </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="position-absolute top-0" style="z-index: -1">
+      <img src="./imges/header-background.jpg" style="width: 100%; height: auto" alt="" />
+    </div>
+    <!--Store name-->
+    <h1 class="h1 display-1 m-5 p-5">
+      <strong>FUTURE TECH</strong>
+    </h1>
+    <!--Carousel-->
+    <div class="container-fluid d-flex">
+      <div class="carousel">
+        <div class="list">
+          <!--Item 1-->
+          <div class="item">
+            <img src="./imges/hditem1.png" alt="" />
+            <div class="intro">
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">Airdots</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, illum eius blanditiis sequi cupiditate eos
+                nesciunt numquam? Laborum, nulla ipsa corporis ipsum a
+                temporibus consequuntur harum rem ducimus iste cum.
+              </div>
+            </div>
+            <div class="detail">
+              <div class="title">
+                Airdots
+              </div>
+            </div>
+          </div>
+          <!--Item 2-->
+          <div class="item">
+            <img src="./imges/hditem2.png" alt="" />
+            <div class="intro">
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">Airdots</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, illum eius blanditiis sequi cupiditate eos
+                nesciunt numquam? Laborum, nulla ipsa corporis ipsum a
+                temporibus consequuntur harum rem ducimus iste cum.
+              </div>
+            </div>
+            <div class="detail">
+              <div class="title">
+                Airdots
+              </div>
+            </div>
+          </div>
+          <!--Item 3-->
+          <div class="item">
+            <img src="./imges/hditem3.png" alt="" />
+            <div class="intro">
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">Airdots</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, illum eius blanditiis sequi cupiditate eos
+                nesciunt numquam? Laborum, nulla ipsa corporis ipsum a
+                temporibus consequuntur harum rem ducimus iste cum.
+              </div>
+            </div>
+            <div class="detail">
+              <div class="title">
+                Airdots
+              </div>
+
+            </div>
+          </div>
+          <!--Item 4-->
+          <div class="item">
+            <img src="./imges/hditem4.png" alt="" />
+            <div class="intro">
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">Airdots</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, illum eius blanditiis sequi cupiditate eos
+                nesciunt numquam? Laborum, nulla ipsa corporis ipsum a
+                temporibus consequuntur harum rem ducimus iste cum.
+              </div>
+            </div>
+            <div class="detail">
+              <div class="title">
+                Airdots
+              </div>
+            </div>
+          </div>
+          <!--Item 5-->
+          <div class="item">
+            <img src="./imges/hditem5.png" alt="" />
+            <div class="intro">
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">Airdots</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, illum eius blanditiis sequi cupiditate eos
+                nesciunt numquam? Laborum, nulla ipsa corporis ipsum a
+                temporibus consequuntur harum rem ducimus iste cum.
+              </div>
+            </div>
+            <div class="detail">
+              <div class="title">
+                Airdots
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Scroll Arrows-->
+      <div class="arrows">
+        <button id="prev">
+          < </button>
+            <button id="next"> > </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--What is hot Section -->
+    <!--Title of the section-->
+    <h2 class="display-5 fw-bold text-center"> What's Hot</h2>
+    <!--Card Group container-->
+    <div class="container d-flex justify-content-center card-group">
+      <!--Card 1-->
+      <div class="card justify-content-center p-2 m-2" style="width: 25%;">
+        <img src="./imges/Hot products/Apple-AirPods-Max-Wireless-Headphones---Blue.png"
+          class="card-img-top p-2 mx-auto d-block" style="width: 240px; height: 180px;" alt="hot-product1">
+        <div class="card-body p-4 m-3">
+          <p class="text-secondary haccessories">Accessories</p>
+          <h5 class="card-title my-3 fs-6">Apple AirPods Max Wireless Blue</h5>
+          <p class="card-text">Breathtaking Audio Quality, Apple-designed dynamic driver provides high-fidelity audio
+          </p>
+          <p class="price fs-4">$549</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <!--Card 2-->
+      <div class="card justify-content-center p-2 m-2" style="width: 25%;">
+        <img src="./imges/Hot products/Apple-AirPods-Max-Wireless-Headphones---MGYJ3AMA.png"
+          class="card-img-top p-2 mx-auto d-block" style="width: 240px; height: 180px;" alt="hot-product1">
+        <div class="card-body p-4 m-3">
+          <p class="text-secondary haccessories">Accessories</p>
+          <h5 class="card-title my-3 fs-6">Apple AirPods Max Wireless White</h5>
+          <p class="card-text">Breathtaking Audio Quality, Apple-designed dynamic driver provides high-fidelity audio
+          </p>
+          <p class="price fs-4">$549</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <!--Card 3-->
+      <div class="card h-100 justify-content-center p-2 m-2">
+        <img src="./imges/Hot products/Apple watch Ultra 2gps.png" class="card-img-top p-2 mx-auto d-block "
+          style="width: 180px; height: 180px;" alt="hot-product3">
+        <div class="card-body p-4 m-3">
+          <p class="text-secondary haccessories">Accessories</p>
+          <h5 class="card-title my-3 fs-6">Apple Watch Ultra</h5>
+          <p class="card-text">Rugged and capable, built to meet the demands of endurance athletes, outdoor adventurers
+            and water sports enthusiasts</p>
+          <p class="price fs-4">$799</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <!--Card 4-->
+      <div class="card justify-content-center p-2 m-2">
+        <img src="./imges/Hot products/Apple-Watch-SE-GPS.png" class="card-img-top p-2 mx-auto d-block"
+          style="width: 180px; height: 180px;" alt="hot-product1">
+        <div class="card-body p-4 m-3">
+          <p class="text-secondary  haccessories">Accessories</p>
+          <h5 class="card-title my-3 fs-6">Apple Watch SE</h5>
+          <p class="card-text">Rugged and capable, built to meet the demands of endurance athletes, outdoor adventurers
+            and water sports enthusiasts</p>
+          <p class="price fs-4">$249</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <!--The end of card groupe container-->
+    </div>
+    <hr>
+    <!--New Arrival Container-->
+    <h2 class="display-5 fw-bold text-center mt-5" id="New">New Products</h2>
+    <div class="cardCarousel">
+        <!--card Slide 1-->
+        <div class="cardSlides first">
+          <!--Card 1-->
+          <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/JPL.png" class="p-2 mx-auto d-block" style="width: 180px; height: 180px;"
+              alt="">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6"> JBL Go 3: Portable Speaker with Bluetooth</h5>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/71gY9E+cTaS._AC_SL1500_.png" class="p-2 mx-auto d-block"
+              style="width: 250px; height: 180px;" alt="">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6">Apple AirTag 4 Pack</h5>
+            </div>
+          </div>
+        </div>
+        <!--Column 2-->
+        <div class="cardSlides second">
+          <!--Card 3-->
+          <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/Tech.png" class="p-2 mx-auto d-block" style="width: 150px; height: 180px;"
+              alt="">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6">Technics Premium Hi-Fi True Wireless</h5>
+            </div>
+          </div>
+            <!--Card 4-->
+            <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+              <img src="./imges/New Products/Samsung Galaxy A35 .png" class="p-2 mx-auto d-block" style="width: 180px; height: 180px;"
+                alt="">
+              <div class="card-body p-1 m-3">
+                <h5 class="card-title my-3 fs-6">Samsung Galaxy A35</h5>
+              </div>
+            </div>
+          </div>
+        <!--Column 3-->
+        <div class="cardSlides third">
+          <!--Card 5-->
+          <div class="card  p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/meta.png" class="p-2 mx-auto d-block" style="width: 150px; height: 180px;">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6">Meta Quest 2 Advanced All-In-One Virtual Reality Headset </h5>
+            </div>
+          </div>
+          <!--Card 6-->
+          <div class="card  p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/reciever.png" class="p-2 mx-auto d-block"
+              style="width: 200px; height: 180px;">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6">Wireless HDMI Transmitter and Receiver</h5>
+            </div>
+          </div>
+        </div>
+        <!--Column 4-->
+        <div class="cardSlides fourth">
+          <!--Card 7-->
+          <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/Data.jpg" class="p-2 mx-auto d-block" style="width: 150px; height: 180px;"
+              alt="">
+            <div class="card-body p-1 m-3">
+              <h5 class="card-title my-3 fs-6">Mini Projector for iPhone</h5>
+            </div>
+          </div>
+          <!--Card 8-->
+          <div class="card p-2 m-2" style="height: 350px; width: 260px;">
+            <img src="./imges/New Products/Beats.png" class="p-2 mx-auto d-block" style="width: 150px; height:180px;"
+              alt="">
+            <div class="card-body p-1 m-3"> 
+              <h5 class="card-title my-3 fs-6">Beats Studio Buds</h5>
+            </div>
+          </div>
+        </div> <!--End of colum 4-->
+      </div> <!--End of new container-->
+      <div class="carouselHandles">
+        <button class="cardPrevButton" id="cardPrevButton"><</button>
+        <span class="indicators" id="indicators"></span>
+      <button class="cardNextButton" id="cardNextButton">></button>
+      </div>
+      <hr>
+    <!--Head title of Sales-->
+    <h2 class="display-5 fw-bold text-center" id="Sales">Sales</h2> 
+    <!--Start of sales cards-->
+    
+    <div class="d-flex justify-content-center p-2  salesCard" style="position: relative;">
+      <div class="card justify-content-center p-2 m-2">
+        <img src="./imges/Sales/Galaxy S21.png" style="height: 300px;" alt="">
+        <p class="card-text sales-text1">-70%</p>
+        <h5 class="card-title my-3 fs-6">Samsung Galaxy S21 Ultra 5G</h5>
+          <p class="card-text sales-text1">-30%</p>
+      </div>
+       <div> <!-- DIV OF 4 PRODUCTS-->
+        <!--first row-->
+        <div class="row"> 
+          <!--first card-->
+          <div class="col-6">
+            <div class="card justify-content-center p-2 m-2 sales" style="height: 250px;">
+              <img src="./imges/Sales/zip flip 5.png" style="height: 180px; width:160px" class="sale-img">
+              <h5 class="card-title my-3 fs-6">Zip Flip 5</h5>
+              <p class="card-text sales-text2">-50%</p>
+            </div>
+          </div>
+          <!--second card-->
+          <div class="col-6">
+            <div class="card justify-content-center p-2 m-2 sales" style="height: 250px;">
+              <img src="./imges/Sales/OnePlus Nord 3 .png" style="height: 190px; width:160px" class="sale-img">
+              <h5 class="card-title my-3 fs-6">OnePlus Nord 3</h5>
+              <p class="card-text sales-text2">-50%</p>
+            </div>
+          </div>
+        </div>
+        <!--second row-->
+        <div class="row"> 
+          <!--first card-->
+          <div class="col-6">
+            <div class="card justify-content-center p-2 m-2 sales" style="height: 250px;">
+              <img src="./imges/Sales/Xiaomi Redmi Note 13.png" style="height: 180px; width:160px" class="sale-img img5">
+              <h5 class="card-title my-3 fs-6">Redmi Note 13</h5>
+              <p class="card-text sales-text2">-70%</p>
+            </div>
+          </div>
+          <!--second card-->
+          <div class="col-6">
+            <div class="card justify-content-center p-2 m-2 sales" style="height: 250px;">
+              <img src="./imges/Sales/zip flip 4.png" class="sale-img" style="height: 180px; width:200px">
+              <h5 class="card-title my-3 fs-6">Zip Flip 4</h5>
+              <p class="card-text sales-text2">-70%</p>
+            </div>
+          </div>
+        </div> <!--end of second row-->
+        <!--end of sale container-->
+    </div>
+  </main>
+  <footer class="mt-5">
+    <div class="brands">
+      <img src="./imges/Footer/Apple.png" style="width: 120px; height: 120px;" alt="Apple">
+      <img src="./imges/Footer/Samsung.png" style="width: 200px; height: 75px;" alt="Samsung">
+      <img src="./imges/Footer/Xiaomi.png" style="width: 220px; height: 220px;" alt="Xiaomi">
+      <img src="./imges/Footer/OnePlus.png" style="width: 250px; height: 250px;" alt="OnePlus">
+    </div>
+    <div class="info mt-3">
+      <div>
+        <h2 class="h5 text-center fw-bold">SIGN UP FOR OUR NEWSLETTER</h2>
+      <p class="text-center">Receive our latest updates about our products & promotions.</p>
+      <input type="text" class="Submit-inp" placeholder="enter your email adress">
+       <button class="Submit-btn">Submit</button>
+      </div>
+      
+      <div class="social">
+        <img src="./imges/Footer/Facebook.png" style="width: 45px; height: 45px;" alt="">
+        <img src="./imges/Footer/Instagram.png" style="width: 45px; height: 45px;" alt="">
+        <img src="./imges/Footer/X.png" style="width:45px; height: 45px;" alt="">
+      </div>
+    </div>
+    <p class="text-center">© 2024, Abdelmouiz Chabane. All Rights Reserved</p>
+  </footer>
+  <!--Bootstrap Script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!--JavaScript File Link-->
+  <script src="./script.js"></script>
+</body>
+</html>
