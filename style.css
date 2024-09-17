@@ -45,6 +45,14 @@ li {
   text-align: center;
   padding: 5px;
 }
+
+.headerName{
+  font-size: 5em;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
 /* Carousel */
 .carousel {
   position: relative;
@@ -271,6 +279,20 @@ li {
 
 @media screen and (max-width: 767px) {
   /* mobile */
+/*Header Title*/
+.headerName{
+  font-size: 2em;
+  font-weight: bold;
+  padding: 2px;
+  margin: 2px;
+  width: 20px;
+}
+/* Background header in mobile*/
+.headerImgBg{
+  height: 1000px;
+}
+
+  /* Carousel in mobile */
   .carousel {
     height: 600px;
   }
@@ -303,6 +325,23 @@ li {
     width: max-content;
     float: right;
   }
+  .carousel .list .item .intro .title {
+    font-size: 1em;
+    line-height: 0.8em;
+  }
+  .carousel .list .item .intro .topic {
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .carousel .list .item .intro .description {
+    font-size: 1em;
+  text-wrap: balance;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+
+  }
+  
 }
  
 
