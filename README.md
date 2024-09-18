@@ -18,7 +18,7 @@
   
 ### Screenshot : 
 
-![](./Screenshots/Screenshot.png)
+![](./Screenshot/Screenshot.png)
 
 ### The challenge :
 
