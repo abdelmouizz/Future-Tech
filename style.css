@@ -46,12 +46,22 @@ li {
   padding: 5px;
 }
 
+h2{
+  text-decoration:  underline;
+  text-decoration-color: #634ed6;
+}
 .headerName{
   font-size: 5em;
   font-weight: bold;
   padding: 20px;
   margin: 20px;
   width: 200px;
+}
+.headerImgBg{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
 }
 /* Carousel */
 .carousel {
@@ -276,7 +286,17 @@ li {
 .carousel.prev .list .item:nth-child(5) {
   animation: positionItem4 0.7 ease-in-out 1 forwards;
 }
-
+.hotCard{
+  width: 25%;
+}
+.containerCardGroupe {
+  display: flex;
+  justify-content: center;
+}
+.imgCard{
+  width: 240px; 
+  height: 180px;
+}
 @media screen and (max-width: 767px) {
   /* mobile */
 /*Header Title*/
@@ -291,7 +311,6 @@ li {
 .headerImgBg{
   height: 1000px;
 }
-
   /* Carousel in mobile */
   .carousel {
     height: 600px;
@@ -335,15 +354,13 @@ li {
   }
   .carousel .list .item .intro .description {
     font-size: 1em;
-  text-wrap: balance;
+    text-wrap: balance;
     overflow: hidden;
     width: 150px;
     height: 150px;
-
   }
-  
+
 }
- 
 
 /* Dropdown Menu */
 .dropdown-menu{
@@ -387,8 +404,8 @@ color: #634ed6;
 }
 .second{
   position: absolute;
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -396,14 +413,14 @@ color: #634ed6;
 .third{
   position: absolute;
   justify-content: center;
- display: flex;
+  display: flex;
   opacity: 0;
   transition: opacity 1s;
 }
 .fourth{
   position: absolute;
   justify-content: center;
- display: flex;
+  display: flex;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -482,15 +499,32 @@ float: right;
 .indicators ul li.active{
   background-color: #8E7BF9;
 }
+.cardSlideBody img{
+  height: 240px; 
+  width: 200px;
+}
+.cardSlideimg{
+  width: 150px;
+}
 /*Sales*/ 
+.sales{
+  height: 250px;
+}
+.sale-bigimg{
+  width: 300px;
+}
+.sale-img{
+  height: 180px; 
+  width:160px;
+}
 .sales-text1{
   position: absolute;
   border-radius: 100%;
   width: 100px;
   height: 100px;
   z-index: 1;
-  top: 350px;
-  left: 230px;
+  top: 250px;
+  left: 210px;
   background-color: rgb(243, 12, 12);
   text-align: center;
   align-content: center;
@@ -520,6 +554,76 @@ float: right;
   -webkit-backdrop-filter: blur(10px);
 }
 
+@media screen and (max-width: 767px){
+    /* What's Hot Section */
+  .containerCardGroupe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .imgCard{
+    width: 100px; 
+    height: 80px;
+  }
+  .hotCard{
+    width: 100%;
+  } 
+
+  /* New Arrival Section */
+  .cardSlideBody img{
+    height: 150px;
+    width: 120px; 
+  }
+  
+  /* Sales */ 
+  .sales{
+    height: 180px;
+  }
+
+  .sale-bigimg{
+    height: 180px;
+    width: 180px;
+  }
+  .sale-img{
+  height:80px; 
+  width:80px;
+  }
+  .cardSalesBody{
+    width: 150px;
+  }
+  .sales-text1{
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    top:500px;
+    left: 100px;
+    background-color: rgb(243, 12, 12);
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e2e2e2;
+  }
+}
+.sales-text2{
+  position: absolute;
+  border-radius: 100%;
+  width:60px;
+  height: 60px;
+  z-index: 1;
+  top: 130px;
+  left: 50px;
+  background-color: rgb(243, 12, 12);
+  text-align: center;
+  align-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e2e2e2;
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10%);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /* FOOTER */
 /* BRANDS */ 
 .brands{
@@ -530,6 +634,24 @@ float: right;
   justify-content: center;
   align-items: center;
   gap: 150px;
+}
+
+/* Brands Picture */
+.apple{
+  width: 120px; 
+  height: 120px;
+}
+.samsung{
+  width: 200px; 
+  height: 75px;
+}
+.xiaomi{
+  width: 220px; 
+  height: 220px;
+}
+.oneplus{
+  width: 250px;
+  height: 250px;
 }
 
 /* Contact Info */ 
@@ -583,8 +705,63 @@ float: right;
   text-align: end;
 }
 
-.sale-img:hover{
-  transform: scale(3,3);
-  z-index: 2;
-  transition: transform 0.5s;
+@media screen and (max-width: 767px){
+  .brands{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    gap: 0;
+  }
+
+  .apple{
+    width: 80px; 
+    height: 80px;
+  }
+  .samsung{
+    text-align: center;
+    width: 100px; 
+    height: 75px;
+  }
+  .xiaomi{
+    width: 180px; 
+    height: 180px;
+  }
+  .oneplus{
+    width: 150px;
+    height: 150px;
+  }
+  .Submit-inp{
+    width: 300px;
+    height: 45px;
+    padding: 9px 15px 10px 15px;
+    border:none;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(35, 35, 35);
+    margin-left: 35px;
+  }
+  .Submit-btn{
+    background-color: #8E7BF9;
+    color: #ffffff;
+    border: 1px solid #634ed6;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+   margin-left: 110px;
+  }
+  .social{
+    padding: 10px;
+    margin: 5px;
+    width: 598px;
+    text-align: center;
+  }
 }
+
