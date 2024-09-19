@@ -29,7 +29,7 @@ Users should be able to:
 - To be able to make script with JavaScript for carousels
 ### Links
 
-- Live Site URL: [Live Site]([https://abdelmouizz.github.io/Huddle-landing-page/](https://abdelmouizz.github.io/Future-Tech/))
+- Live Site URL: [Live Site]([https://abdelmouizz.github.io/Future-Tech/])
   
    ## Process :
   
