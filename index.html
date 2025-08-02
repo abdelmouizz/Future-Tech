@@ -12,22 +12,16 @@
   <title>Future Tech</title>
 </head>
 <body>
-  <header class="header position-relative">
-    <nav class="navbar navbar-expand-lg" style="z-index: 1">
-      <div class="navbar-brand m-5" href="#">Future Tech</div>
-      <ul class="navbar-nav navbar-collapse justify-content-center mx-5">
+  <headerclass="header position-relative">
+    <nav class="navbar navbar-expand-lg" style="z-index: 1" id="navBar">
+      
+      <ul class="navbar-nav navbar-collapse justify-content-center mx-5" id="navMenu">
+        <img src="./imges/Logo/Future Tech.png" style="height: 50px; width: 50px;" alt="">
         <li class="navbar-items mx-5">
-          <a class="nav-link fw-bold"> Home </a>
+          <a  href="#Home" class="nav-link fw-bold"> Home </a>
         </li>
-        <li class="navbar-items dropdown mx-5">
-          <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Shope
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item text-start" href="#">Accessories</a></li>
-            <li><a class="dropdown-item text-start" href="#">Phones</a></li>
-          </ul>
+        <li class="navbar-items mx-5">
+          <a class="nav-link fw-bold"> Shope </a>
         </li>
         <li class="navbar-items mx-5">
           <a href="#New" class="nav-link fw-bold"> New </a>
@@ -36,14 +30,15 @@
           <a href="#Sales" class="nav-link fw-bold"> Sales </a>
         </li>
       </ul>
-
-      <div class="humberger">
+              <!--Burger Menu-->
+   
+    </nav>
+       <div class="humberger" id="humbergerMenu">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </nav>
     <div class="position-absolute top-0" style="z-index: -1">
       <img src="./imges/header-background.jpg" class="headerImgBg" alt="" />
     </div>

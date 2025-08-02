@@ -107,3 +107,27 @@ function removeAllActive(){
   bullet.classList.remove('active');
  });
 };
+
+// Humberger Menu 
+let humberMenu = document.getElementById('humbergerMenu');
+let navMenu = document.getElementById('navMenu');
+
+humberMenu.addEventListener('click', () => {
+  humberMenu.classList.toggle('hbactive');
+  navMenu.classList.toggle('navactive');
+});
+
+//navbar appear on scroll 
+let navBar = document.getElementById('navBar');
+
+window.onscroll = () =>{
+  if (window.scrollY > navBar.style.height){
+     navBar.classList.add('scroll');
+  } else {
+     navBar.classList.remove('scroll')
+  }
+}
+
+
+
+
