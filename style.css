@@ -55,9 +55,23 @@ h2{
 }
 .navbar.scroll{
  position: fixed;
- background-color:#cbafffa8;
- width: 100%;
- top: 0;
+ background-color:#cbafffa8 filter blur(8px);
+ box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
+ backdrop-filter: blur(6px);
+ margin-left: 29%;
+ margin-right: 50%;
+ border: 1px  solid silver;
+ border-radius: 15px;
+ top: 20px;
+ z-index: 2;
+}
+.nav-link:hover{
+  background-color: #8e7bfc;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 25%);
+  padding: 8px;
+  color: white;
 }
 .headerName{
   font-size: 5em;
