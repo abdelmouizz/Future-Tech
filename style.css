@@ -471,7 +471,7 @@ float: right;
   border-radius: 100%;
   width: 100px;
   height: 100px;
-  z-index: 1;
+  z-index:0;
   top: 250px;
   left: 210px;
   background-color: rgb(243, 12, 12);
@@ -489,7 +489,7 @@ float: right;
   border-radius: 100%;
   width: 80px;
   height: 80px;
-  z-index: 1;
+  z-index: 0;
   top: 130px;
   left: 130px;
   background-color: rgb(243, 12, 12);
@@ -691,16 +691,14 @@ float: right;
 .humberger.hbactive span:nth-child(4){
   opacity: 0;
 }
-.navbar.scroll{
-  display: none;
-}
+
 .navbar-nav > li >  a {
   color: #cccccc !important;
 }
 .navbar-nav{
   color: #cccccc !important;
   background-color: #130036a8;
-  height: 100vh !important;
+  height: 100% !important;
   width: 100vw !important;
   position: fixed !important;
   top: 0 !important;
@@ -750,14 +748,13 @@ float: right;
   }
 .cardSalesBody{
   width: 150px;
-  background-color: #634ed6;
   }
 .sales-text1{
   width: 80px;
   height: 80px;
   z-index: 1;
-  top:500px;
-  left: 100px;
+  top:150px;
+  left: 195px;
   background-color: rgb(243, 12, 12);
   text-align: center;
   align-content: center;
