@@ -697,7 +697,6 @@ float: right;
 }
 .navbar.scroll{
   height: 100%;
-  width: 100%;
   position: fixed;
   background-color:#130036a8 filter blur(0px);
   box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
@@ -706,8 +705,8 @@ float: right;
   margin-right: 0;
   border: none;
   border-radius: 0px;
+  display:flex;
   top: 0px;
-  z-index: 2;
 }
 .navbar-nav{
   color: #cccccc !important;
@@ -800,6 +799,8 @@ float: right;
   width: 100%;
   height: 300px;
   background-color: black;
+  justify-items: center; /* Centers items horizontally within their cells */
+  align-items: center;   /* Centers items vertically within their cells */
   gap: 0;
   }
 
@@ -808,7 +809,6 @@ float: right;
   height: 80px;
   }
 .samsung{
-  text-align: center;
   width: 100px; 
   height: 75px;
   }

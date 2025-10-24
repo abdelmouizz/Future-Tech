@@ -124,7 +124,7 @@ window.onscroll = () =>{
   if (window.scrollY > navBar.style.height){
     navBar.classList.add('scroll');
   } else {
-    navBar.classList.remove('scroll')
+    navBar.classList.remove('scroll');
   }
 }
 
