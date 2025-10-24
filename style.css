@@ -695,10 +695,24 @@ float: right;
 .navbar-nav > li >  a {
   color: #cccccc !important;
 }
+.navbar.scroll{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color:#130036a8 filter blur(0px);
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
+  backdrop-filter: blur(0px);
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  border-radius: 0px;
+  top: 0px;
+  z-index: 2;
+}
 .navbar-nav{
   color: #cccccc !important;
   background-color: #130036a8;
-  height: 100% !important;
+  height: 100%;
   width: 100vw !important;
   position: fixed !important;
   top: 0 !important;
@@ -752,7 +766,7 @@ float: right;
 .sales-text1{
   width: 80px;
   height: 80px;
-  z-index: 1;
+  z-index: 0;
   top:150px;
   left: 195px;
   background-color: rgb(243, 12, 12);
@@ -767,7 +781,7 @@ float: right;
   border-radius: 100%;
   width:60px;
   height: 60px;
-  z-index: 1;
+  z-index: 0;
   top: 130px;
   left: 50px;
   background-color: rgb(243, 12, 12);
