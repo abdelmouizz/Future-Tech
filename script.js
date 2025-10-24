@@ -72,28 +72,28 @@ theChecker();
 // Create The Checker Function : 
 function theChecker() {
    // Remove Active class from every slide
-   removeAllActive();
+removeAllActive();
    // Set Active Class in the current Slide
-   cardslides[currentSlide].classList.add('active');
+cardslides[currentSlide].classList.add('active');
   // Set Active Class in the current bullets Item
   bullets[currentSlide].classList.add('active');
 
   // Check if Current Side is The first 
   if (currentSlide === 0){
    // Add Disabled Class on Previous Button
-   cardPrevButton.classList.add('disabled');
+cardPrevButton.classList.add('disabled');
   } else {
    // Remove Disabled
-   cardPrevButton.classList.remove('disabled');
+cardPrevButton.classList.remove('disabled');
   }
     // Check if Current Side is The last
     if (currentSlide === cardCount -1) {
       // Add Disabled Class on Next Button
       cardNextButton.classList.add('disabled');
-     } else {
+} else {
       // Remove Disabled
       cardNextButton.classList.remove('disabled');
-     }
+}
 }
 // Remove All Active Class
 function removeAllActive(){

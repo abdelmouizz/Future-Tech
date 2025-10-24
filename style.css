@@ -321,6 +321,9 @@ h2{
   width: 240px; 
   height: 180px;
 }
+.VmBtn{
+display: none;
+}
 
 /* What is hot section */
 .haccessories{
@@ -594,6 +597,13 @@ float: right;
   margin: 2px;
   width: 20px;
 }
+.VmBtn{
+  border: none;
+  background-color: transparent;
+  color: #634ed6;
+  font-weight: bold;
+  display: none;
+}
 /* Background header in mobile*/
 .headerImgBg{
   height: 1000px;
@@ -799,8 +809,8 @@ float: right;
   width: 100%;
   height: 300px;
   background-color: black;
-  justify-items: center; /* Centers items horizontally within their cells */
-  align-items: center;   /* Centers items vertically within their cells */
+  justify-items: center; 
+  align-items: center;
   gap: 0;
   }
 
@@ -854,5 +864,53 @@ float: right;
   }
 }
 
+@media (min-width: 320px) and (max-width: 425px){
+.carousel .list .item .intro .description {
+  font-size: 1.2em;
+  margin-left: -20px;
+}
+.VmBtn{
+  border: none;
+  background-color: transparent;
+  color: #634ed6;
+  font-weight: bold;
+  display: flex;
+}
+.AccText{
+  height: calc(4 * 1.2em);
+  overflow: hidden;
+}
+.card-body{
+padding: 15px !important;
+}
+
+.cardSlideBody{
+  width: 40%;
+}
+.cardSlideBody img{
+  height: 120px;
+  width: 100px;
+  }
+.cardSlideBody .card-title{
+  font-size: 0.8em;
+}
+
+.salesCard{
+  display: flexbox;
+  flex-direction: column;
+
+}
+.sale-bigimg{
+  height: 120px;
+  width: 100px;
+  }
+.sales-text1{
+  top: 40px;
+  left: 150px;
+}
+.info{
+  font-size: 0.8em;
+}
+}
 
 
