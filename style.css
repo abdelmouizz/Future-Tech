@@ -880,6 +880,10 @@ float: right;
   height: calc(4 * 1.2em);
   overflow: hidden;
 }
+.AccTextShow{
+  height: max-content;
+  overflow: auto;
+}
 .card-body{
 padding: 15px !important;
 }
