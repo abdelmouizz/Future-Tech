@@ -679,7 +679,7 @@ float: right;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: #ffffff ;
+  background-color: #2a1347 ;
   border-radius: 6px;
   z-index: 1;
   transform-origin: 0 0;
@@ -877,12 +877,25 @@ float: right;
   display: flex;
 }
 .AccText{
-  height: calc(4 * 1.2em);
+  line-height: 1.2em;
+  height: calc(3 * 1.2em);
   overflow: hidden;
+  position: relative;
+}
+.AccText::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1.2em;
+  width: 90%;
+  background: linear-gradient(to right, transparent, white);
+  
 }
 .AccTextShow{
   height: max-content;
-  overflow: auto;
+  overflow: none;
+
 }
 .card-body{
 padding: 15px !important;

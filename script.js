@@ -128,10 +128,8 @@ window.onscroll = () =>{
   }
 }
 
-let ViewMoreButton = document.getElementById('ViewMoreBtn');
-ViewMoreButton.onclick = () =>{
-  
-}
+
+
 
 
 
